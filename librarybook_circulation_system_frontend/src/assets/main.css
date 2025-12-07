@@ -1,4 +1,4 @@
-@import './base.css';
+/* @import './base.css';
 
 #app {
   max-width: 1280px;
@@ -32,4 +32,46 @@ a,
     grid-template-columns: 1fr 1fr;
     padding: 0 2rem;
   }
+} */
+/* Import font Google (Inter hoặc Roboto) cho giống hiện đại */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f9f9f9;
+  /* Màu nền xám rất nhạt giống Perlego */
+  color: #333;
+}
+
+/* Hiệu ứng hover cho các thẻ sách */
+.book-card {
+  transition: all 0.3s ease;
+  background: white;
+  border: none !important;
+  /* Bỏ viền đen của bootstrap */
+  border-radius: 12px;
+  /* Bo tròn góc */
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+  /* Bay lên nhẹ khi di chuột */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  /* Đổ bóng mềm */
+}
+
+/* Nút bấm theo phong cách Perlego (Màu xanh/đỏ chủ đạo) */
+.btn-perlego {
+  background-color: #2e59d9;
+  /* Màu xanh na ná Perlego */
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border: none;
+}
+
+.btn-perlego:hover {
+  background-color: #1a42b8;
+  color: white;
 }
